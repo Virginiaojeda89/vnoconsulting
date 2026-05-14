@@ -4,9 +4,9 @@ export default function Home() {
       style={{
         margin: 0,
         padding: 0,
-        fontFamily: "Arial, sans-serif",
         backgroundColor: "#020617",
         color: "white",
+        fontFamily: "Arial, sans-serif",
         scrollBehavior: "smooth",
       }}
     >
@@ -22,34 +22,35 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "20px 50px",
+          padding: "20px 60px",
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
+        {/* LOGO */}
         <div
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "18px",
+            gap: "20px",
           }}
         >
           <div
             style={{
-              width: "70px",
-              height: "70px",
+              width: "72px",
+              height: "72px",
               borderRadius: "50%",
               border: "2px solid #fbbf24",
               display: "flex",
-              alignItems: "center",
               justifyContent: "center",
+              alignItems: "center",
               flexDirection: "column",
-              background: "#020617",
+              backgroundColor: "#020617",
             }}
           >
             <span
               style={{
                 color: "#fbbf24",
-                fontSize: "30px",
+                fontSize: "32px",
                 fontWeight: "bold",
               }}
             >
@@ -59,8 +60,7 @@ export default function Home() {
             <span
               style={{
                 color: "white",
-                fontSize: "12px",
-                letterSpacing: "2px",
+                fontSize: "11px",
               }}
             >
               VNO
@@ -71,7 +71,7 @@ export default function Home() {
             <h2
               style={{
                 margin: 0,
-                fontSize: "42px",
+                fontSize: "40px",
               }}
             >
               VNO
@@ -90,6 +90,7 @@ export default function Home() {
           </div>
         </div>
 
+        {/* MENU */}
         <div
           style={{
             display: "flex",
@@ -98,34 +99,20 @@ export default function Home() {
             fontSize: "18px",
           }}
         >
-          <a href="#inicio" style={linkStyle}>
+          <a href="#inicio" style={menuStyle}>
             Inicio
           </a>
 
-          <a href="#servicios" style={linkStyle}>
+          <a href="#servicios" style={menuStyle}>
             Servicios
           </a>
 
-          <a href="#nosotros" style={linkStyle}>
+          <a href="#nosotros" style={menuStyle}>
             Sobre nosotros
           </a>
 
-          <a href="#contacto" style={linkStyle}>
+          <a href="#contacto" style={menuStyle}>
             Contacto
-          </a>
-
-          <a
-            href="https://instagram.com/consultingvno"
-            style={socialStyle}
-          >
-            IG
-          </a>
-
-          <a
-            href="https://linkedin.com"
-            style={socialStyle}
-          >
-            in
           </a>
         </div>
       </nav>
@@ -137,9 +124,9 @@ export default function Home() {
           minHeight: "100vh",
           display: "flex",
           alignItems: "center",
-          padding: "140px 60px 80px",
+          padding: "120px 60px",
           backgroundImage:
-            "linear-gradient(to right, rgba(2,6,23,0.96), rgba(2,6,23,0.70)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=2070&auto=format&fit=crop')",
+            "linear-gradient(to right, rgba(2,6,23,0.95), rgba(2,6,23,0.65)), url('/hero.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -148,23 +135,23 @@ export default function Home() {
           {/* LOGO HERO */}
           <div
             style={{
-              width: "250px",
-              height: "250px",
+              width: "260px",
+              height: "260px",
               borderRadius: "50%",
               border: "3px solid #fbbf24",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               flexDirection: "column",
-              background: "rgba(2,6,23,0.65)",
               marginBottom: "40px",
-              boxShadow: "0 0 30px rgba(251,191,36,0.3)",
+              background: "rgba(2,6,23,0.55)",
+              backdropFilter: "blur(5px)",
             }}
           >
             <h1
               style={{
                 color: "#fbbf24",
-                fontSize: "72px",
+                fontSize: "76px",
                 margin: 0,
               }}
             >
@@ -174,7 +161,7 @@ export default function Home() {
             <h2
               style={{
                 margin: 0,
-                fontSize: "50px",
+                fontSize: "52px",
               }}
             >
               VNO
@@ -182,9 +169,9 @@ export default function Home() {
 
             <p
               style={{
-                margin: 0,
                 color: "#fbbf24",
                 letterSpacing: "4px",
+                margin: 0,
               }}
             >
               CONSULTING GROUP
@@ -195,7 +182,7 @@ export default function Home() {
             style={{
               fontSize: "68px",
               lineHeight: "1.2",
-              marginBottom: "25px",
+              marginBottom: "30px",
             }}
           >
             Administración • Contabilidad
@@ -208,10 +195,10 @@ export default function Home() {
 
           <p
             style={{
-              fontSize: "26px",
               color: "#d1d5db",
+              fontSize: "26px",
               lineHeight: "1.8",
-              marginBottom: "45px",
+              marginBottom: "40px",
             }}
           >
             Soluciones estratégicas para emprendedores, profesionales y PyMEs
@@ -230,7 +217,7 @@ export default function Home() {
               style={{
                 background: "#fbbf24",
                 color: "#000",
-                padding: "18px 40px",
+                padding: "18px 38px",
                 borderRadius: "14px",
                 textDecoration: "none",
                 fontWeight: "bold",
@@ -245,7 +232,7 @@ export default function Home() {
               style={{
                 border: "1px solid #fbbf24",
                 color: "#fbbf24",
-                padding: "18px 40px",
+                padding: "18px 38px",
                 borderRadius: "14px",
                 textDecoration: "none",
                 fontWeight: "bold",
@@ -264,14 +251,14 @@ export default function Home() {
         style={{
           padding: "120px 60px",
           background:
-            "linear-gradient(to bottom, #020617, #081225)",
+            "linear-gradient(to bottom,#020617,#081225)",
         }}
       >
         <h2
           style={{
             textAlign: "center",
             fontSize: "58px",
-            marginBottom: "70px",
+            marginBottom: "80px",
           }}
         >
           <span style={{ color: "#fbbf24" }}>
@@ -284,7 +271,7 @@ export default function Home() {
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit, minmax(320px, 1fr))",
+              "repeat(auto-fit,minmax(320px,1fr))",
             gap: "35px",
           }}
         >
@@ -292,12 +279,12 @@ export default function Home() {
             {
               icon: "💼",
               title: "ADMINISTRACIÓN",
-              text: "Organización de procesos, control de gestión, costos, presupuestos y optimización administrativa.",
+              text: "Organización de procesos, control de gestión, costos y optimización administrativa.",
             },
             {
               icon: "🧾",
               title: "CONTABILIDAD",
-              text: "Monotributo, impuestos, registraciones contables y asesoramiento integral.",
+              text: "Monotributo, impuestos, registraciones y asesoramiento integral.",
             },
             {
               icon: "📈",
@@ -310,17 +297,15 @@ export default function Home() {
               style={{
                 background:
                   "linear-gradient(145deg,#0f172a,#1e293b)",
-                borderRadius: "28px",
+                borderRadius: "30px",
                 padding: "45px",
                 border:
                   "1px solid rgba(255,255,255,0.08)",
-                boxShadow:
-                  "0 10px 35px rgba(0,0,0,0.4)",
               }}
             >
               <div
                 style={{
-                  fontSize: "55px",
+                  fontSize: "58px",
                   marginBottom: "25px",
                 }}
               >
@@ -331,7 +316,6 @@ export default function Home() {
                 style={{
                   fontSize: "30px",
                   marginBottom: "20px",
-                  color: "#fff",
                 }}
               >
                 {item.title}
@@ -351,90 +335,11 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NOSOTROS */}
-      <section
-        id="nosotros"
-        style={{
-          background: "#f8fafc",
-          color: "#020617",
-          padding: "120px 60px",
-        }}
-      >
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "56px",
-            marginBottom: "70px",
-          }}
-        >
-          ¿POR QUÉ ELEGIRNOS?
-        </h2>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit, minmax(220px,1fr))",
-            gap: "40px",
-            textAlign: "center",
-          }}
-        >
-          {[
-            {
-              title: "CONFIANZA",
-              text: "Comprometidos con la confidencialidad y ética profesional.",
-            },
-            {
-              title: "EXPERIENCIA",
-              text: "Trayectoria en administración, contabilidad y finanzas.",
-            },
-            {
-              title: "CERCANÍA",
-              text: "Atención personalizada y soluciones a medida.",
-            },
-            {
-              title: "RESULTADOS",
-              text: "Enfoque en crecimiento y eficiencia empresarial.",
-            },
-          ].map((item, index) => (
-            <div key={index}>
-              <div
-                style={{
-                  fontSize: "54px",
-                  marginBottom: "20px",
-                  color: "#fbbf24",
-                }}
-              >
-                ✦
-              </div>
-
-              <h3
-                style={{
-                  fontSize: "30px",
-                }}
-              >
-                {item.title}
-              </h3>
-
-              <p
-                style={{
-                  fontSize: "20px",
-                  lineHeight: "1.8",
-                  color: "#475569",
-                }}
-              >
-                {item.text}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* CONTACTO */}
       <section
         id="contacto"
         style={{
-          padding: "110px 60px",
+          padding: "100px 60px",
           background:
             "linear-gradient(to right,#020617,#0f172a)",
           textAlign: "center",
@@ -442,8 +347,8 @@ export default function Home() {
       >
         <h2
           style={{
-            fontSize: "60px",
-            marginBottom: "15px",
+            fontSize: "58px",
+            marginBottom: "20px",
           }}
         >
           ESTAMOS PARA AYUDARTE
@@ -451,9 +356,9 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: "28px",
             color: "#fbbf24",
-            marginBottom: "60px",
+            fontSize: "28px",
+            marginBottom: "50px",
           }}
         >
           Hacemos simple lo que parece complicado.
@@ -465,8 +370,8 @@ export default function Home() {
             justifyContent: "center",
             gap: "50px",
             flexWrap: "wrap",
-            fontSize: "22px",
             color: "#d1d5db",
+            fontSize: "22px",
           }}
         >
           <span>📩 consultingvno@gmail.com</span>
@@ -483,7 +388,7 @@ export default function Home() {
           background: "#020617",
           borderTop:
             "1px solid rgba(255,255,255,0.08)",
-          padding: "45px 60px",
+          padding: "40px",
           textAlign: "center",
           color: "#94a3b8",
         }}
@@ -494,20 +399,8 @@ export default function Home() {
   );
 }
 
-const linkStyle = {
+const menuStyle = {
   color: "white",
   textDecoration: "none",
   fontWeight: "500",
-};
-
-const socialStyle = {
-  color: "#fbbf24",
-  textDecoration: "none",
-  border: "1px solid #fbbf24",
-  borderRadius: "50%",
-  width: "42px",
-  height: "42px",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
 };
