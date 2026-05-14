@@ -1,17 +1,17 @@
 export default function Home() {
   const services = [
     {
-      icon: "📊",
+      icon: "💼",
       title: "ADMINISTRACIÓN",
       text: "Organización estratégica de procesos, control de gestión y optimización administrativa.",
     },
     {
-      icon: "🧮",
+      icon: "📑",
       title: "CONTABILIDAD",
       text: "Impuestos, monotributo, registraciones y asesoramiento contable integral.",
     },
     {
-      icon: "📈",
+      icon: "💹",
       title: "MERCADO DE CAPITALES",
       text: "Análisis financiero, inversiones y herramientas para potenciar tu capital.",
     },
