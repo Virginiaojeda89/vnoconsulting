@@ -1,12 +1,30 @@
 export default function Home() {
+  const services = [
+    {
+      icon: "📊",
+      title: "ADMINISTRACIÓN",
+      text: "Organización estratégica de procesos, control de gestión y optimización administrativa.",
+    },
+    {
+      icon: "🧮",
+      title: "CONTABILIDAD",
+      text: "Impuestos, monotributo, registraciones y asesoramiento contable integral.",
+    },
+    {
+      icon: "📈",
+      title: "MERCADO DE CAPITALES",
+      text: "Análisis financiero, inversiones y herramientas para potenciar tu capital.",
+    },
+  ];
+
   return (
-    <div
+    <main
       style={{
-        margin: 0,
-        padding: 0,
-        backgroundColor: "#020617",
+        background: "#020617",
         color: "white",
         fontFamily: "Arial, sans-serif",
+        margin: 0,
+        padding: 0,
         overflowX: "hidden",
       }}
     >
@@ -18,103 +36,112 @@ export default function Home() {
           width: "100%",
           zIndex: 1000,
           background: "rgba(2,6,23,0.92)",
-          backdropFilter: "blur(8px)",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "18px 50px",
+          backdropFilter: "blur(10px)",
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
-        {/* LOGO */}
         <div
           style={{
+            maxWidth: "1400px",
+            margin: "0 auto",
+            padding: "18px 40px",
             display: "flex",
+            justifyContent: "space-between",
             alignItems: "center",
-            gap: "16px",
           }}
         >
+          {/* LOGO */}
           <div
             style={{
-              width: "64px",
-              height: "64px",
-              borderRadius: "50%",
-              border: "2px solid #fbbf24",
               display: "flex",
-              justifyContent: "center",
               alignItems: "center",
-              flexDirection: "column",
-              backgroundColor: "#020617",
+              gap: "16px",
             }}
           >
-            <span
+            <div
               style={{
-                color: "#fbbf24",
-                fontSize: "28px",
-                fontWeight: "bold",
+                width: "68px",
+                height: "68px",
+                borderRadius: "50%",
+                border: "2px solid #fbbf24",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                flexDirection: "column",
+                background: "#020617",
+                boxShadow: "0 0 18px rgba(251,191,36,0.25)",
               }}
             >
-              V
-            </span>
+              <span
+                style={{
+                  color: "#fbbf24",
+                  fontSize: "30px",
+                  fontWeight: "bold",
+                  lineHeight: "1",
+                }}
+              >
+                V
+              </span>
 
-            <span
-              style={{
-                color: "white",
-                fontSize: "10px",
-              }}
-            >
-              VNO
-            </span>
+              <span
+                style={{
+                  color: "white",
+                  fontSize: "10px",
+                }}
+              >
+                VNO
+              </span>
+            </div>
+
+            <div>
+              <h1
+                style={{
+                  margin: 0,
+                  fontSize: "34px",
+                  lineHeight: "1",
+                }}
+              >
+                VNO
+              </h1>
+
+              <p
+                style={{
+                  margin: 0,
+                  color: "#fbbf24",
+                  letterSpacing: "4px",
+                  fontSize: "12px",
+                }}
+              >
+                CONSULTING GROUP
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h2
-              style={{
-                margin: 0,
-                fontSize: "34px",
-                lineHeight: "1",
-              }}
-            >
-              VNO
-            </h2>
-
-            <p
-              style={{
-                margin: 0,
-                color: "#fbbf24",
-                letterSpacing: "4px",
-                fontSize: "12px",
-              }}
-            >
-              CONSULTING GROUP
-            </p>
+          {/* MENU */}
+          <div
+            style={{
+              display: "flex",
+              gap: "35px",
+              alignItems: "center",
+            }}
+          >
+            {["Inicio", "Servicios", "Nosotros", "Contacto"].map(
+              (item, index) => (
+                <a
+                  key={index}
+                  href={`#${item.toLowerCase()}`}
+                  style={{
+                    color: "white",
+                    textDecoration: "none",
+                    fontSize: "17px",
+                    fontWeight: "500",
+                  }}
+                >
+                  {item}
+                </a>
+              )
+            )}
           </div>
-        </div>
-
-        {/* MENU */}
-        <div
-          style={{
-            display: "flex",
-            gap: "30px",
-            alignItems: "center",
-            fontSize: "17px",
-          }}
-        >
-          <a href="#inicio" style={menuStyle}>
-            Inicio
-          </a>
-
-          <a href="#servicios" style={menuStyle}>
-            Servicios
-          </a>
-
-          <a href="#nosotros" style={menuStyle}>
-            Sobre nosotros
-          </a>
-
-          <a href="#contacto" style={menuStyle}>
-            Contacto
-          </a>
         </div>
       </nav>
 
@@ -122,131 +149,144 @@ export default function Home() {
       <section
         id="inicio"
         style={{
-          minHeight: "92vh",
+          minHeight: "100vh",
           display: "flex",
           alignItems: "center",
-          padding: "140px 60px 80px",
           backgroundImage:
-            "linear-gradient(to right, rgba(2,6,23,0.96), rgba(2,6,23,0.70)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=2070&auto=format&fit=crop')",
+            "linear-gradient(to right, rgba(2,6,23,0.95), rgba(2,6,23,0.65)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2070&auto=format&fit=crop')",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          padding: "160px 40px 100px",
         }}
       >
-        <div style={{ maxWidth: "700px" }}>
-          {/* LOGO HERO */}
+        <div
+          style={{
+            maxWidth: "1400px",
+            margin: "0 auto",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            gap: "80px",
+            flexWrap: "wrap",
+          }}
+        >
+          {/* LOGO GRANDE */}
           <div
             style={{
-              width: "180px",
-              height: "180px",
+              width: "280px",
+              height: "280px",
               borderRadius: "50%",
               border: "3px solid #fbbf24",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "column",
-              marginBottom: "35px",
-              background: "rgba(2,6,23,0.55)",
-              backdropFilter: "blur(5px)",
+              background: "rgba(2,6,23,0.72)",
+              backdropFilter: "blur(6px)",
+              boxShadow: "0 0 40px rgba(251,191,36,0.25)",
+              flexShrink: 0,
             }}
           >
-            <h1
+            <h2
               style={{
                 color: "#fbbf24",
-                fontSize: "54px",
+                fontSize: "86px",
                 margin: 0,
                 lineHeight: "1",
               }}
             >
               V
-            </h1>
+            </h2>
 
-            <h2
+            <h3
               style={{
                 margin: 0,
-                fontSize: "42px",
+                fontSize: "62px",
                 lineHeight: "1",
               }}
             >
               VNO
-            </h2>
+            </h3>
 
             <p
               style={{
                 margin: 0,
                 color: "#fbbf24",
-                letterSpacing: "3px",
-                fontSize: "12px",
+                letterSpacing: "4px",
+                fontSize: "15px",
               }}
             >
               CONSULTING GROUP
             </p>
           </div>
 
-          <h1
-            style={{
-              fontSize: "58px",
-              lineHeight: "1.2",
-              marginBottom: "25px",
-              fontWeight: "bold",
-            }}
-          >
-            Administración • Contabilidad
-            <br />
-
-            <span style={{ color: "#fbbf24" }}>
-              • Mercado de Capitales
-            </span>
-          </h1>
-
-          <p
-            style={{
-              color: "#d1d5db",
-              fontSize: "24px",
-              lineHeight: "1.7",
-              marginBottom: "40px",
-              maxWidth: "650px",
-            }}
-          >
-            Soluciones estratégicas para emprendedores, profesionales y PyMEs
-            que buscan crecimiento, organización y respaldo profesional.
-          </p>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "18px",
-              flexWrap: "wrap",
-            }}
-          >
-            <a
-              href="https://wa.me/543416657721"
+          {/* TEXTO */}
+          <div style={{ maxWidth: "760px" }}>
+            <h1
               style={{
-                background: "#fbbf24",
-                color: "#000",
-                padding: "16px 34px",
-                borderRadius: "12px",
-                textDecoration: "none",
+                fontSize: "78px",
+                lineHeight: "1.1",
+                marginBottom: "30px",
                 fontWeight: "bold",
-                fontSize: "18px",
               }}
             >
-              WhatsApp
-            </a>
+              Administración • Contabilidad
+              <br />
 
-            <a
-              href="https://instagram.com/consultingvno"
+              <span style={{ color: "#fbbf24" }}>
+                • Mercado de Capitales
+              </span>
+            </h1>
+
+            <p
               style={{
-                border: "1px solid #fbbf24",
-                color: "#fbbf24",
-                padding: "16px 34px",
-                borderRadius: "12px",
-                textDecoration: "none",
-                fontWeight: "bold",
-                fontSize: "18px",
+                color: "#d1d5db",
+                fontSize: "28px",
+                lineHeight: "1.7",
+                marginBottom: "45px",
               }}
             >
-              Instagram
-            </a>
+              Soluciones estratégicas para emprendedores, profesionales y PyMEs
+              que buscan crecimiento, organización y respaldo profesional.
+            </p>
+
+            <div
+              style={{
+                display: "flex",
+                gap: "20px",
+                flexWrap: "wrap",
+              }}
+            >
+              <a
+                href="https://wa.me/543416657721"
+                style={{
+                  background: "#fbbf24",
+                  color: "#000",
+                  padding: "18px 40px",
+                  borderRadius: "14px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                WhatsApp
+              </a>
+
+              <a
+                href="https://instagram.com/consultingvno"
+                style={{
+                  border: "1px solid #fbbf24",
+                  color: "#fbbf24",
+                  padding: "18px 40px",
+                  borderRadius: "14px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  fontSize: "20px",
+                }}
+              >
+                Instagram
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -255,156 +295,171 @@ export default function Home() {
       <section
         id="servicios"
         style={{
-          padding: "100px 60px",
+          padding: "120px 40px",
           background:
             "linear-gradient(to bottom,#020617,#081225)",
         }}
       >
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "52px",
-            marginBottom: "70px",
-          }}
-        >
-          <span style={{ color: "#fbbf24" }}>
-            NUESTROS
-          </span>{" "}
-          SERVICIOS
-        </h2>
-
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(280px,1fr))",
-            gap: "30px",
+            maxWidth: "1400px",
+            margin: "0 auto",
           }}
         >
-          {[
-            {
-              icon: "💼",
-              title: "ADMINISTRACIÓN",
-              text: "Organización de procesos, costos, presupuestos y optimización administrativa.",
-            },
-            {
-              icon: "🧾",
-              title: "CONTABILIDAD",
-              text: "Monotributo, impuestos y asesoramiento integral.",
-            },
-            {
-              icon: "📈",
-              title: "MERCADO DE CAPITALES",
-              text: "Educación financiera e inversiones.",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              style={{
-                background:
-                  "linear-gradient(145deg,#0f172a,#1e293b)",
-                borderRadius: "24px",
-                padding: "40px",
-                border:
-                  "1px solid rgba(255,255,255,0.08)",
-              }}
-            >
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "64px",
+              marginBottom: "80px",
+            }}
+          >
+            <span style={{ color: "#fbbf24" }}>
+              NUESTROS
+            </span>{" "}
+            SERVICIOS
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit,minmax(340px,1fr))",
+              gap: "35px",
+            }}
+          >
+            {services.map((service, index) => (
               <div
+                key={index}
                 style={{
-                  fontSize: "52px",
-                  marginBottom: "20px",
+                  background:
+                    "linear-gradient(145deg,#081225,#162338)",
+                  borderRadius: "34px",
+                  padding: "55px",
+                  border:
+                    "1px solid rgba(255,255,255,0.06)",
+                  boxShadow:
+                    "0 15px 40px rgba(0,0,0,0.35)",
+                  transition: "0.3s",
                 }}
               >
-                {item.icon}
+                <div
+                  style={{
+                    fontSize: "78px",
+                    marginBottom: "28px",
+                  }}
+                >
+                  {service.icon}
+                </div>
+
+                <h3
+                  style={{
+                    fontSize: "36px",
+                    marginBottom: "22px",
+                  }}
+                >
+                  {service.title}
+                </h3>
+
+                <div
+                  style={{
+                    width: "80px",
+                    height: "4px",
+                    background: "#fbbf24",
+                    borderRadius: "999px",
+                    marginBottom: "25px",
+                  }}
+                />
+
+                <p
+                  style={{
+                    color: "#d1d5db",
+                    fontSize: "22px",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  {service.text}
+                </p>
               </div>
-
-              <h3
-                style={{
-                  fontSize: "28px",
-                  marginBottom: "18px",
-                }}
-              >
-                {item.title}
-              </h3>
-
-              <p
-                style={{
-                  color: "#d1d5db",
-                  fontSize: "19px",
-                  lineHeight: "1.7",
-                }}
-              >
-                {item.text}
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* BENEFICIOS */}
+      {/* NOSOTROS */}
       <section
         id="nosotros"
         style={{
           background: "#f8fafc",
           color: "#020617",
-          padding: "100px 60px",
+          padding: "120px 40px",
         }}
       >
-        <h2
-          style={{
-            textAlign: "center",
-            fontSize: "54px",
-            marginBottom: "70px",
-          }}
-        >
-          ¿POR QUÉ ELEGIRNOS?
-        </h2>
-
         <div
           style={{
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit,minmax(220px,1fr))",
-            gap: "40px",
-            textAlign: "center",
+            maxWidth: "1300px",
+            margin: "0 auto",
           }}
         >
-          {[
-            "CONFIANZA",
-            "EXPERIENCIA",
-            "CERCANÍA",
-            "RESULTADOS",
-          ].map((item, index) => (
-            <div key={index}>
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "60px",
+              marginBottom: "70px",
+            }}
+          >
+            ¿POR QUÉ ELEGIRNOS?
+          </h2>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit,minmax(240px,1fr))",
+              gap: "40px",
+            }}
+          >
+            {[
+              "CONFIANZA",
+              "EXPERIENCIA",
+              "CERCANÍA",
+              "RESULTADOS",
+            ].map((item, index) => (
               <div
+                key={index}
                 style={{
-                  color: "#fbbf24",
-                  fontSize: "52px",
-                  marginBottom: "15px",
+                  textAlign: "center",
                 }}
               >
-                ✦
+                <div
+                  style={{
+                    fontSize: "56px",
+                    color: "#fbbf24",
+                    marginBottom: "20px",
+                  }}
+                >
+                  ✦
+                </div>
+
+                <h3
+                  style={{
+                    fontSize: "30px",
+                  }}
+                >
+                  {item}
+                </h3>
+
+                <p
+                  style={{
+                    color: "#475569",
+                    fontSize: "20px",
+                    lineHeight: "1.8",
+                  }}
+                >
+                  Atención personalizada y soluciones estratégicas para cada cliente.
+                </p>
               </div>
-
-              <h3
-                style={{
-                  fontSize: "28px",
-                }}
-              >
-                {item}
-              </h3>
-
-              <p
-                style={{
-                  color: "#475569",
-                  fontSize: "18px",
-                  lineHeight: "1.7",
-                }}
-              >
-                Atención personalizada y soluciones profesionales.
-              </p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </section>
 
@@ -412,7 +467,7 @@ export default function Home() {
       <section
         id="contacto"
         style={{
-          padding: "100px 60px",
+          padding: "120px 40px",
           background:
             "linear-gradient(to right,#020617,#0f172a)",
           textAlign: "center",
@@ -420,7 +475,7 @@ export default function Home() {
       >
         <h2
           style={{
-            fontSize: "52px",
+            fontSize: "64px",
             marginBottom: "20px",
           }}
         >
@@ -430,8 +485,8 @@ export default function Home() {
         <p
           style={{
             color: "#fbbf24",
-            fontSize: "28px",
-            marginBottom: "50px",
+            fontSize: "30px",
+            marginBottom: "60px",
           }}
         >
           Hacemos simple lo que parece complicado.
@@ -441,9 +496,9 @@ export default function Home() {
           style={{
             display: "flex",
             justifyContent: "center",
-            gap: "40px",
+            gap: "50px",
             flexWrap: "wrap",
-            fontSize: "20px",
+            fontSize: "22px",
             color: "#d1d5db",
           }}
         >
@@ -468,12 +523,6 @@ export default function Home() {
       >
         © 2026 VNO Consulting Group · Todos los derechos reservados.
       </footer>
-    </div>
+    </main>
   );
 }
-
-const menuStyle = {
-  color: "white",
-  textDecoration: "none",
-  fontWeight: "500",
-};
