@@ -418,11 +418,23 @@ export default function Home() {
               gap: "40px",
             }}
           >
-            {[
-              "CONFIANZA",
-              "EXPERIENCIA",
-              "CERCANÍA",
-              "RESULTADOS",
+  {
+    title: "CONFIANZA",
+    text: "Trabajamos con transparencia, compromiso y atención personalizada.",
+  },
+  {
+    title: "EXPERIENCIA",
+    text: "Soluciones estratégicas adaptadas a emprendedores y PyMEs.",
+  },
+  {
+    title: "CERCANÍA",
+    text: "Acompañamiento profesional constante en cada etapa del proceso.",
+  },
+  {
+    title: "RESULTADOS",
+    text: "Enfoque práctico orientado al crecimiento y la organización financiera.",
+  },
+
             ].map((item, index) => (
               <div
                 key={index}
