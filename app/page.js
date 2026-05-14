@@ -456,8 +456,9 @@ export default function Home() {
                   style={{
                     fontSize: "30px",
                   }}
-                >
-                  {item}
+                
+                  {item.title}
+      
                 </h3>
 
                 <p
@@ -467,7 +468,7 @@ export default function Home() {
                     lineHeight: "1.8",
                   }}
                 >
-                  Atención personalizada y soluciones estratégicas para cada cliente.
+                 {item.text}
                 </p>
               </div>
             ))}
