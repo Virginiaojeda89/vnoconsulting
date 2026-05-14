@@ -22,7 +22,7 @@ export default function Home() {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "20px 60px",
+          padding: "18px 50px",
           borderBottom: "1px solid rgba(255,255,255,0.08)",
         }}
       >
@@ -31,18 +31,18 @@ export default function Home() {
           style={{
             display: "flex",
             alignItems: "center",
-            gap: "18px",
+            gap: "16px",
           }}
         >
           <div
             style={{
-              width: "72px",
-              height: "72px",
+              width: "64px",
+              height: "64px",
               borderRadius: "50%",
               border: "2px solid #fbbf24",
               display: "flex",
-              alignItems: "center",
               justifyContent: "center",
+              alignItems: "center",
               flexDirection: "column",
               backgroundColor: "#020617",
             }}
@@ -50,7 +50,7 @@ export default function Home() {
             <span
               style={{
                 color: "#fbbf24",
-                fontSize: "34px",
+                fontSize: "28px",
                 fontWeight: "bold",
               }}
             >
@@ -60,7 +60,7 @@ export default function Home() {
             <span
               style={{
                 color: "white",
-                fontSize: "11px",
+                fontSize: "10px",
               }}
             >
               VNO
@@ -71,7 +71,8 @@ export default function Home() {
             <h2
               style={{
                 margin: 0,
-                fontSize: "42px",
+                fontSize: "34px",
+                lineHeight: "1",
               }}
             >
               VNO
@@ -82,7 +83,7 @@ export default function Home() {
                 margin: 0,
                 color: "#fbbf24",
                 letterSpacing: "4px",
-                fontSize: "14px",
+                fontSize: "12px",
               }}
             >
               CONSULTING GROUP
@@ -94,9 +95,9 @@ export default function Home() {
         <div
           style={{
             display: "flex",
-            gap: "35px",
+            gap: "30px",
             alignItems: "center",
-            fontSize: "18px",
+            fontSize: "17px",
           }}
         >
           <a href="#inicio" style={menuStyle}>
@@ -121,39 +122,39 @@ export default function Home() {
       <section
         id="inicio"
         style={{
-          minHeight: "100vh",
+          minHeight: "92vh",
           display: "flex",
           alignItems: "center",
-          padding: "140px 60px 100px",
+          padding: "140px 60px 80px",
           backgroundImage:
-            "linear-gradient(to right, rgba(2,6,23,0.96), rgba(2,6,23,0.60)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=2070&auto=format&fit=crop')",
+            "linear-gradient(to right, rgba(2,6,23,0.96), rgba(2,6,23,0.70)), url('https://images.unsplash.com/photo-1514565131-fce0801e5785?q=80&w=2070&auto=format&fit=crop')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div style={{ maxWidth: "760px" }}>
+        <div style={{ maxWidth: "700px" }}>
           {/* LOGO HERO */}
           <div
             style={{
-              width: "260px",
-              height: "260px",
+              width: "180px",
+              height: "180px",
               borderRadius: "50%",
               border: "3px solid #fbbf24",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               flexDirection: "column",
-              marginBottom: "45px",
+              marginBottom: "35px",
               background: "rgba(2,6,23,0.55)",
-              backdropFilter: "blur(6px)",
-              boxShadow: "0 0 30px rgba(251,191,36,0.25)",
+              backdropFilter: "blur(5px)",
             }}
           >
             <h1
               style={{
                 color: "#fbbf24",
-                fontSize: "78px",
+                fontSize: "54px",
                 margin: 0,
+                lineHeight: "1",
               }}
             >
               V
@@ -162,7 +163,8 @@ export default function Home() {
             <h2
               style={{
                 margin: 0,
-                fontSize: "54px",
+                fontSize: "42px",
+                lineHeight: "1",
               }}
             >
               VNO
@@ -172,7 +174,8 @@ export default function Home() {
               style={{
                 margin: 0,
                 color: "#fbbf24",
-                letterSpacing: "4px",
+                letterSpacing: "3px",
+                fontSize: "12px",
               }}
             >
               CONSULTING GROUP
@@ -181,9 +184,9 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "72px",
-              lineHeight: "1.15",
-              marginBottom: "30px",
+              fontSize: "58px",
+              lineHeight: "1.2",
+              marginBottom: "25px",
               fontWeight: "bold",
             }}
           >
@@ -198,10 +201,10 @@ export default function Home() {
           <p
             style={{
               color: "#d1d5db",
-              fontSize: "28px",
-              lineHeight: "1.8",
-              marginBottom: "45px",
-              maxWidth: "700px",
+              fontSize: "24px",
+              lineHeight: "1.7",
+              marginBottom: "40px",
+              maxWidth: "650px",
             }}
           >
             Soluciones estratégicas para emprendedores, profesionales y PyMEs
@@ -211,7 +214,7 @@ export default function Home() {
           <div
             style={{
               display: "flex",
-              gap: "22px",
+              gap: "18px",
               flexWrap: "wrap",
             }}
           >
@@ -220,11 +223,11 @@ export default function Home() {
               style={{
                 background: "#fbbf24",
                 color: "#000",
-                padding: "18px 40px",
-                borderRadius: "14px",
+                padding: "16px 34px",
+                borderRadius: "12px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "20px",
+                fontSize: "18px",
               }}
             >
               WhatsApp
@@ -235,11 +238,11 @@ export default function Home() {
               style={{
                 border: "1px solid #fbbf24",
                 color: "#fbbf24",
-                padding: "18px 40px",
-                borderRadius: "14px",
+                padding: "16px 34px",
+                borderRadius: "12px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "20px",
+                fontSize: "18px",
               }}
             >
               Instagram
@@ -252,7 +255,7 @@ export default function Home() {
       <section
         id="servicios"
         style={{
-          padding: "120px 60px",
+          padding: "100px 60px",
           background:
             "linear-gradient(to bottom,#020617,#081225)",
         }}
@@ -260,8 +263,8 @@ export default function Home() {
         <h2
           style={{
             textAlign: "center",
-            fontSize: "60px",
-            marginBottom: "80px",
+            fontSize: "52px",
+            marginBottom: "70px",
           }}
         >
           <span style={{ color: "#fbbf24" }}>
@@ -274,8 +277,8 @@ export default function Home() {
           style={{
             display: "grid",
             gridTemplateColumns:
-              "repeat(auto-fit,minmax(320px,1fr))",
-            gap: "35px",
+              "repeat(auto-fit,minmax(280px,1fr))",
+            gap: "30px",
           }}
         >
           {[
@@ -287,12 +290,12 @@ export default function Home() {
             {
               icon: "🧾",
               title: "CONTABILIDAD",
-              text: "Monotributo, impuestos, registraciones y asesoramiento integral.",
+              text: "Monotributo, impuestos y asesoramiento integral.",
             },
             {
               icon: "📈",
               title: "MERCADO DE CAPITALES",
-              text: "Educación financiera, inversiones y planificación estratégica.",
+              text: "Educación financiera e inversiones.",
             },
           ].map((item, index) => (
             <div
@@ -300,18 +303,16 @@ export default function Home() {
               style={{
                 background:
                   "linear-gradient(145deg,#0f172a,#1e293b)",
-                borderRadius: "30px",
-                padding: "45px",
+                borderRadius: "24px",
+                padding: "40px",
                 border:
                   "1px solid rgba(255,255,255,0.08)",
-                boxShadow:
-                  "0 10px 35px rgba(0,0,0,0.35)",
               }}
             >
               <div
                 style={{
-                  fontSize: "60px",
-                  marginBottom: "25px",
+                  fontSize: "52px",
+                  marginBottom: "20px",
                 }}
               >
                 {item.icon}
@@ -319,8 +320,8 @@ export default function Home() {
 
               <h3
                 style={{
-                  fontSize: "32px",
-                  marginBottom: "20px",
+                  fontSize: "28px",
+                  marginBottom: "18px",
                 }}
               >
                 {item.title}
@@ -329,8 +330,8 @@ export default function Home() {
               <p
                 style={{
                   color: "#d1d5db",
-                  fontSize: "21px",
-                  lineHeight: "1.8",
+                  fontSize: "19px",
+                  lineHeight: "1.7",
                 }}
               >
                 {item.text}
@@ -346,14 +347,14 @@ export default function Home() {
         style={{
           background: "#f8fafc",
           color: "#020617",
-          padding: "120px 60px",
+          padding: "100px 60px",
         }}
       >
         <h2
           style={{
             textAlign: "center",
-            fontSize: "60px",
-            marginBottom: "80px",
+            fontSize: "54px",
+            marginBottom: "70px",
           }}
         >
           ¿POR QUÉ ELEGIRNOS?
@@ -369,29 +370,17 @@ export default function Home() {
           }}
         >
           {[
-            {
-              title: "CONFIANZA",
-              text: "Comprometidos con la confidencialidad y ética profesional.",
-            },
-            {
-              title: "EXPERIENCIA",
-              text: "Trayectoria en administración y finanzas.",
-            },
-            {
-              title: "CERCANÍA",
-              text: "Atención personalizada y soluciones a medida.",
-            },
-            {
-              title: "RESULTADOS",
-              text: "Enfoque en crecimiento y eficiencia empresarial.",
-            },
+            "CONFIANZA",
+            "EXPERIENCIA",
+            "CERCANÍA",
+            "RESULTADOS",
           ].map((item, index) => (
             <div key={index}>
               <div
                 style={{
                   color: "#fbbf24",
-                  fontSize: "58px",
-                  marginBottom: "20px",
+                  fontSize: "52px",
+                  marginBottom: "15px",
                 }}
               >
                 ✦
@@ -399,20 +388,20 @@ export default function Home() {
 
               <h3
                 style={{
-                  fontSize: "30px",
+                  fontSize: "28px",
                 }}
               >
-                {item.title}
+                {item}
               </h3>
 
               <p
                 style={{
                   color: "#475569",
-                  fontSize: "20px",
-                  lineHeight: "1.8",
+                  fontSize: "18px",
+                  lineHeight: "1.7",
                 }}
               >
-                {item.text}
+                Atención personalizada y soluciones profesionales.
               </p>
             </div>
           ))}
@@ -423,7 +412,7 @@ export default function Home() {
       <section
         id="contacto"
         style={{
-          padding: "110px 60px",
+          padding: "100px 60px",
           background:
             "linear-gradient(to right,#020617,#0f172a)",
           textAlign: "center",
@@ -431,7 +420,7 @@ export default function Home() {
       >
         <h2
           style={{
-            fontSize: "60px",
+            fontSize: "52px",
             marginBottom: "20px",
           }}
         >
@@ -441,8 +430,8 @@ export default function Home() {
         <p
           style={{
             color: "#fbbf24",
-            fontSize: "30px",
-            marginBottom: "60px",
+            fontSize: "28px",
+            marginBottom: "50px",
           }}
         >
           Hacemos simple lo que parece complicado.
@@ -452,9 +441,9 @@ export default function Home() {
           style={{
             display: "flex",
             justifyContent: "center",
-            gap: "50px",
+            gap: "40px",
             flexWrap: "wrap",
-            fontSize: "22px",
+            fontSize: "20px",
             color: "#d1d5db",
           }}
         >
@@ -472,7 +461,7 @@ export default function Home() {
           background: "#020617",
           borderTop:
             "1px solid rgba(255,255,255,0.08)",
-          padding: "40px",
+          padding: "35px",
           textAlign: "center",
           color: "#94a3b8",
         }}
